@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated theme with sophisticated brown palette */
+  --background: oklch(0.08 0.02 270); /* Deep dark marble */
+  --foreground: oklch(0.75 0.08 45); /* Brown Sugar text #A67C52 */
+  --card: oklch(0.12 0.02 270); /* Slightly lighter dark */
+  --card-foreground: oklch(0.75 0.08 45);
+  --popover: oklch(0.12 0.02 270);
+  --popover-foreground: oklch(0.75 0.08 45);
+  --primary: oklch(0.68 0.12 50); /* Golden Brown #B08D57 */
+  --primary-foreground: oklch(0.08 0.02 270);
+  --secondary: oklch(0.15 0.02 270);
+  --secondary-foreground: oklch(0.75 0.08 45);
+  --muted: oklch(0.15 0.02 270);
+  --muted-foreground: oklch(0.58 0.06 40); /* Taupe #8B6A4F */
+  --accent: oklch(0.68 0.12 50); /* Golden Brown */
+  --accent-foreground: oklch(0.08 0.02 270);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.25 0.02 270);
+  --input: oklch(0.15 0.02 270);
+  --ring: oklch(0.68 0.12 50);
+  --chart-1: oklch(0.68 0.12 50); /* Golden Brown */
+  --chart-2: oklch(0.75 0.08 45); /* Brown Sugar */
+  --chart-3: oklch(0.58 0.06 40); /* Taupe */
+  --chart-4: oklch(0.45 0.08 35);
+  --chart-5: oklch(0.35 0.06 30);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.12 0.02 270);
+  --sidebar-foreground: oklch(0.75 0.08 45);
+  --sidebar-primary: oklch(0.68 0.12 50);
+  --sidebar-primary-foreground: oklch(0.08 0.02 270);
+  --sidebar-accent: oklch(0.15 0.02 270);
+  --sidebar-accent-foreground: oklch(0.75 0.08 45);
+  --sidebar-border: oklch(0.25 0.02 270);
+  --sidebar-ring: oklch(0.68 0.12 50);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 206, 84, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(120, 119, 198, 0.05) 0%, transparent 50%);
+  }
+}
+
+/* Added marble texture overlay */
+.marble-bg {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.02) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.02) 75%);
+  background-size: 60px 60px;
+  background-position: 0 0, 0 30px, 30px -30px, -30px 0px;
+}
+
+/* Updated gold text gradient with brown palette */
+.gold-text {
+  background: linear-gradient(135deg, #b08d57 0%, #a67c52 50%, #8b6a4f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
