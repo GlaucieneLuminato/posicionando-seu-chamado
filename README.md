@@ -51,7 +51,7 @@ Mentoria
 Contato
 
 
-🛠 Tecnologias Utilizadas
+🛠 <h2> Tecnologias Utilizadas </h2>
 
 HTML5
 
@@ -63,10 +63,10 @@ Emergent / Fullstack App (para geração do site)
 
 Google Fonts: Playfair Display e Poppins
 
-
-![mentoras](https://github.com/user-attachments/assets/c6000e24-845d-44c8-b2b2-335bca4adffe)
-
-
-📱 Responsividade
+📱 <h2> Responsividade </h2>
 
 O site foi desenvolvido para funcionar perfeitamente em celulares, tablets e desktops, mantendo a estética limpa e funcional em qualquer tela
+
+
+
+![mentoras](https://github.com/user-attachments/assets/c6000e24-845d-44c8-b2b2-335bca4adffe)
