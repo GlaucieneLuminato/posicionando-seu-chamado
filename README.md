@@ -1,3 +1,4 @@
+![mentoras](https://github.com/user-attachments/assets/c6000e24-845d-44c8-b2b2-335bca4adffe)
 🌸 Sobre o Projeto
 
 Posicionanado seu Chamado é um site criado para apresentar um curso completo e prático de Nail Design, com foco em posicionamento profissional, estratégias de venda e mentoria personalizada.
