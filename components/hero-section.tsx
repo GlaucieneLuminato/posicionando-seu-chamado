@@ -10,7 +10,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/mentors-hero.png"
-          alt="Giovanna Krejci e Taynara Camargo"
+          alt="Taynara Camargo"
           fill
           className="object-cover object-[center_20%] opacity-90"
           priority
