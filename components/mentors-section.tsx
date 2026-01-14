@@ -3,7 +3,7 @@ import { Award, BookOpen } from "lucide-react"
 
 const mentors = [
   {
-    name: "Giovanna Krejci",
+    name: "Taynara Camargo",
     title: "Especialista em Posicionamento",
     description:
       "Com mais de 10 anos de experiência em desenvolvimento profissional, Giovanna é especialista em ajudar profissionais a descobrirem seu propósito e se posicionarem estrategicamente no mercado.",
